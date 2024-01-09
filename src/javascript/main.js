@@ -16,4 +16,7 @@ async function checkWeather(city){
     document.querySelector(".wind").innerHTML = data.wind.speed + " Km/h";
 }
 
-checkWeather();
+searchBtn.addEventListener("click", ()=>{
+    checkWeather(searchBox.value);
+})
+
