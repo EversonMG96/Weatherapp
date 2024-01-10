@@ -1,3 +1,4 @@
+
 const apiKey = "d514009f1874431b33661655dfef1fe9";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
@@ -15,8 +16,10 @@ async function checkWeather(city){
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + " Km/h";
 
+    if (data.weather[0].main == "Clouds") {
+        
+    }
 
-    
 }
 
 searchBtn.addEventListener("click", ()=>{
