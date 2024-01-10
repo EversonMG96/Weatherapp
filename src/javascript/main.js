@@ -19,6 +19,9 @@ async function checkWeather(city){
 
     if (data.weather[0].main == "Clouds") {
         weatherIcon.src = "images/clouds.png";
+    } 
+    else if (data.weather[0].main == "Clear") {
+        
     }
 
 }
